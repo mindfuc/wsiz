@@ -1,0 +1,19 @@
+body {
+	background-color: $secondaryLight;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-content {
+	margin-left: 215px;
+	padding: 15px;
+	background-color: $mainLight;
+	color: $mainTextColor;
+}
+
+a {
+	color: $mainTextColor;
+	&:hover {
+		color: $mainTextColor;
+		text-decoration: none;
+	}
+}
