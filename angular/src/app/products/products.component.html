@@ -1,15 +1,11 @@
 <div class="Products">
   <div class="card-columns">
-
-    <div *ngFor="let product of products" class="card text-white bg-secondary">
+    <div *ngFor="let product of products | async" class="card text-center">
       <img class="card-img-top" src="{{product.imageUrl}}" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{product.title}}</h5>
-        <p class="card-text">{{product.description}}</p>
-        <a routerLink="/products/{{product.id}}" class="btn btn-primary">more details</a>
+        <a [routerLink]="['/products', product.id]" class="btn btn-outline-primary">Go to product</a>
       </div>
     </div>
-
-
   </div>
 </div>
