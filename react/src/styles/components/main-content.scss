@@ -1,0 +1,18 @@
+.main-content {
+	margin-left: 25%;
+	padding: 10px;
+	padding-top: 75px;
+	.single-product {
+		color: $light;
+		background-color: #6c757e;
+		border: 1px solid $main-gray;
+		border-radius: 3px;
+		margin-bottom: 15px;
+		img {
+			max-width: 100%;
+		}
+		.content {
+			padding: 20px 25px;
+		}
+	}
+}

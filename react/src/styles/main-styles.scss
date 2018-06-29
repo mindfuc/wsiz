@@ -1,19 +1,20 @@
-body {
-	background-color: $secondaryLight;
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.main-content {
-	margin-left: 215px;
-	padding: 15px;
-	background-color: $mainLight;
-	color: $mainTextColor;
-}
-
-a {
-	color: $mainTextColor;
+.btn {
+	display: inline-block;
+	background-color: $main-blue;
+	padding: 10px;
+	color: $light;
 	&:hover {
-		color: $mainTextColor;
-		text-decoration: none;
+		color: $light;
 	}
+}
+
+.loading {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $main-blue;
+	opacity: 0.5;
 }

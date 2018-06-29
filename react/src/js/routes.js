@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import firebase from './src/firebase.js';
 
+import Aside from './components/aside/aside';
+import Header from './components/header/header';
 import Home from './containers/home/';
+import ProductDetails from './containers/productDetails';
 
-import { setCurrentUser } from './actions/users';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -15,7 +18,10 @@ class Routes extends Component {
 		return (
 			<BrowserRouter>
 				<div>
+					<Header/>
+					<Aside/>
 					<Switch>
+						<Route path={'/product/:id'} component={ ProductDetails } />
 						<Route path={'/'} component={Home} />
 					</Switch>
 				</div>
@@ -25,4 +31,3 @@ class Routes extends Component {
 }
 
 export default Routes;
-

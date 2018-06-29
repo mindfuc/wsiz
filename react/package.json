@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "bootstrap": "^4.0.0-beta",
+    "firebase": "^5.1.0",
     "history": "^4.7.2",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
@@ -31,6 +32,7 @@
     "react-dropzone": "^4.2.1",
     "react-intl": "^2.4.0",
     "react-redux": "^5.0.6",
+    "react-redux-firebase": "^2.1.6",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^3.7.2",
