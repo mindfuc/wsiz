@@ -38,7 +38,7 @@ class Home extends Component {
 	renderProducts() {
 		let products = this.filterProducts();
 		const allProducts = Object.keys(products).map(key =>
-			<div className="col-md-3" key={key}>
+			<div className="col-lg-3 col-md-4 col-sm-6" key={key}>
 				<SingleProduct details={products[key]} />
 	    </div>
 		);
