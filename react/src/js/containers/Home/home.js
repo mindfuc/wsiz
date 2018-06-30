@@ -15,11 +15,13 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
+		console.time("Wczytywanie listy produktów");
 		this.db = firebase.database().ref('products').on('value', (snap) => {
 			this.setState({
 				data: snap.val()
 			});
 		});
+		console.timeEnd("Wczytywanie listy produktów");
 	}
 
 	filterProducts() {

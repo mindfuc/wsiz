@@ -13,6 +13,7 @@ class ProductDetails extends Component {
 	}
 
 	componentDidMount() {
+		console.time('Wczytywanie pojedynczego produktu');
 		let productID = this.props.match.params.id;
 		this.product = firebase.database()
 			.ref('products')
@@ -30,6 +31,7 @@ class ProductDetails extends Component {
 				data: results
 			});
 		});
+		console.timeEnd("Wczytywanie pojedynczego produktu");
 	}
 
 	render(){
