@@ -1,0 +1,12 @@
+<div class="Sidebar">
+  <ul class="list-group">
+    <li
+      *ngFor="let category of categories | async"
+      [routerLink]="['/categories', category.id]"
+      class="list-group-item"
+      [routerLinkActive]="'active'"
+    >
+        {{ category.title }}
+    </li>
+  </ul>
+</div>

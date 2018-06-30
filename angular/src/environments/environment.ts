@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyBn55AKEguO5k4BP6px61J--UbdXiyu9YE',
+    authDomain: 'woven-patrol-127817.firebaseapp.com',
+    databaseURL: 'https://woven-patrol-127817.firebaseio.com',
+    projectId: 'woven-patrol-127817',
+    storageBucket: 'woven-patrol-127817.appspot.com',
+    messagingSenderId: '32351208906'
+  }
 };
 
 /*

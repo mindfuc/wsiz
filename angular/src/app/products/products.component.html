@@ -1,0 +1,11 @@
+<div class="Products">
+  <div class="card-columns">
+    <div *ngFor="let product of products | async" class="card text-center">
+      <img class="card-img-top" src="{{product.imageUrl}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{product.title}}</h5>
+        <a [routerLink]="['/products', product.id]" class="btn btn-outline-primary">Go to product</a>
+      </div>
+    </div>
+  </div>
+</div>

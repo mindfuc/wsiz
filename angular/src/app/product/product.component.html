@@ -1,0 +1,15 @@
+<div class="Product">
+  <div *ngFor="let single of product | async">
+    <div class="card mb-3">
+    <img class="card-img-top" src="http://placehold.it/1280x250" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{single.title}} <span class="badge badge-secondary">{{single.category}}</span></h5>
+      <p class="card-text">{{single.description}}</p>
+      <h6 class="card-text">Price <span class="badge badge-secondary">${{single.price}}</span></h6>
+    </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-outline-info" (click)="backClicked()">Go to previous page</button>
+      </div>
+  </div>
+  </div>
+</div>
